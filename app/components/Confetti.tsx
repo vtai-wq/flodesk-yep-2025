@@ -21,14 +21,14 @@ export default function Confetti({ trigger = true }: ConfettiProps) {
         angle: 60,
         spread: 55,
         origin: { x: 0, y: 0.7 },
-        colors: ['#000000', '#FFD700', '#333333', '#E6C200'],
+        colors: ['#000000', '#FF6B6B', '#333333', '#E85555'],
       });
       confetti({
         particleCount: 3,
         angle: 120,
         spread: 55,
         origin: { x: 1, y: 0.7 },
-        colors: ['#000000', '#FFD700', '#333333', '#E6C200'],
+        colors: ['#000000', '#FF6B6B', '#333333', '#E85555'],
       });
 
       if (Date.now() < end) {

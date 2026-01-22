@@ -2,11 +2,11 @@
 @import "tailwindcss";
 
 :root {
-  /* Colors - Black & White theme with gold accent */
+  /* Colors - Black & White theme with coral accent */
   --primary: #000000;
   --primary-dark: #333333;
-  --accent: #FFD700;
-  --accent-dark: #E6C200;
+  --accent: #FF6B6B;
+  --accent-dark: #E85555;
   --background: #FFFFFF;
   --background-lighter: #F5F5F5;
   --surface: rgba(0, 0, 0, 0.05);
