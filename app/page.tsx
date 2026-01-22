@@ -13,10 +13,10 @@ export default function LanguageSelectionPage() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-6 relative overflow-hidden">
-      {/* Decorative background elements */}
+      {/* Decorative background elements - mix of black and gold */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
-          className="absolute top-20 left-10 w-3 h-3 bg-black/10 rounded-full"
+          className="absolute top-20 left-10 w-3 h-3 bg-[var(--accent)] rounded-full"
           animate={{ y: [0, -15, 0] }}
           transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
         />
@@ -26,7 +26,7 @@ export default function LanguageSelectionPage() {
           transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
         />
         <motion.div
-          className="absolute bottom-40 left-6 w-4 h-4 bg-black/10 rounded-full"
+          className="absolute bottom-40 left-6 w-4 h-4 bg-[var(--accent)]/60 rounded-full"
           animate={{ y: [0, -12, 0] }}
           transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
         />
@@ -34,6 +34,11 @@ export default function LanguageSelectionPage() {
           className="absolute bottom-32 right-12 w-6 h-6 bg-black/10 rounded-full"
           animate={{ y: [0, -8, 0] }}
           transition={{ duration: 4.5, repeat: Infinity, ease: 'easeInOut', delay: 0.3 }}
+        />
+        <motion.div
+          className="absolute top-1/3 right-1/4 w-2 h-2 bg-[var(--accent)]/80 rounded-full"
+          animate={{ y: [0, -6, 0] }}
+          transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut', delay: 0.2 }}
         />
       </div>
 

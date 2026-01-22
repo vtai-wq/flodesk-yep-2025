@@ -10,6 +10,25 @@ import {
   subtitleVariants,
 } from "@/app/lib/animations";
 
+// Highlight special words in gold
+function highlightText(text: string) {
+  const highlights = ["BONUS POINTS", "ĐIỂM THƯỞNG"];
+  const result = text;
+
+  for (const highlight of highlights) {
+    if (result.includes(highlight)) {
+      return (
+        <>
+          {result.split(highlight)[0]}
+          <span className="text-[var(--accent)] font-bold">{highlight}</span>
+          {result.split(highlight)[1]}
+        </>
+      );
+    }
+  }
+  return text;
+}
+
 export default function InstructionsPage() {
   const { t } = useLanguage();
 
@@ -34,18 +53,23 @@ export default function InstructionsPage() {
           </motion.h1>
 
           {/* Instruction Steps */}
-          <div className="space-y-4 mb-8">
+          <motion.div
+            className="space-y-4 mb-8"
+            variants={staggerContainer}
+            initial="initial"
+            animate="animate"
+          >
             {steps.map((step, index) => (
               <Card key={index}>
                 <p
                   className="text-lg leading-relaxed"
                   style={{ color: "var(--text)" }}
                 >
-                  {step}
+                  {highlightText(step)}
                 </p>
               </Card>
             ))}
-          </div>
+          </motion.div>
 
           {/* Footer */}
           <motion.p

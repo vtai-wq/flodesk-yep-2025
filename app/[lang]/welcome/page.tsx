@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import { useLanguage } from '@/app/hooks/useLanguage';
 import PageTransition from '@/app/components/PageTransition';
 import Button from '@/app/components/Button';
+import Confetti from '@/app/components/Confetti';
 import { titleVariants, subtitleVariants, staggerContainer, floatVariants } from '@/app/lib/animations';
 
 export default function WelcomePage() {
@@ -17,11 +18,12 @@ export default function WelcomePage() {
 
   return (
     <PageTransition>
+      <Confetti />
       <div className="min-h-screen flex flex-col items-center justify-center p-6 relative overflow-hidden">
-        {/* Decorative floating elements */}
+        {/* Decorative floating elements - mix of black and gold */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div
-            className="absolute top-24 left-8 w-4 h-4 bg-black/10 rounded-full"
+            className="absolute top-24 left-8 w-4 h-4 bg-[var(--accent)] rounded-full"
             variants={floatVariants}
             animate="animate"
           />
@@ -31,7 +33,7 @@ export default function WelcomePage() {
             transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut', delay: 0.3 }}
           />
           <motion.div
-            className="absolute bottom-48 left-12 w-5 h-5 bg-black/10 rounded-full"
+            className="absolute bottom-48 left-12 w-5 h-5 bg-[var(--accent)]/60 rounded-full"
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 0.7 }}
           />
@@ -41,9 +43,14 @@ export default function WelcomePage() {
             transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
           />
           <motion.div
-            className="absolute top-1/2 left-4 w-3 h-3 bg-black/10 rounded-full"
+            className="absolute top-1/2 left-4 w-3 h-3 bg-[var(--accent)] rounded-full"
             animate={{ y: [0, -8, 0] }}
             transition={{ duration: 4.5, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+          />
+          <motion.div
+            className="absolute top-32 left-1/3 w-2 h-2 bg-[var(--accent)]/80 rounded-full"
+            animate={{ y: [0, -6, 0] }}
+            transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut', delay: 0.2 }}
           />
         </div>
 
