@@ -56,7 +56,7 @@ export default function WelcomePage() {
 
         {/* Main content */}
         <motion.div
-          className="w-full max-w-sm z-10 text-center"
+          className="w-full max-w-lg z-10 text-center"
           variants={staggerContainer}
           initial="initial"
           animate="animate"
@@ -65,7 +65,7 @@ export default function WelcomePage() {
           <motion.h1
             className="text-[var(--size-title)] font-extrabold mb-4 leading-tight"
             variants={titleVariants}
-            style={{ color: 'var(--text)' }}
+            style={{ color: 'var(--text)', whiteSpace: 'pre-line' }}
           >
             {t.welcomeTitle}
           </motion.h1>
