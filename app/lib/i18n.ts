@@ -11,11 +11,11 @@ export const translations = {
     welcomeCta: "Let's Go!",
 
     // Instructions Screen
-    instructionsTitle: "Warm-up Game 🎉",
-    step1: "1️⃣ You've received 2 image pieces",
-    step2: "2️⃣ Find the right table with matching pieces and complete the image together",
-    step3: "3️⃣ Complete the image fast – BONUS POINTS are waiting! 🎉",
-    instructionsFooter: "Good luck & enjoy the party! 🎉",
+    instructionsTitle: "Mission: Find Your Team 🔍",
+    step1: "1️⃣ You've got 2 puzzle pieces – guard them with your life! (jk, just don't lose them 😅)",
+    step2: "2️⃣ Hunt down your teammates! Find the ones with matching pieces to complete the picture (6-7 people per team)",
+    step3: "3️⃣ Stick your masterpiece on the table to prove your team exists! Mission complete! ✨",
+    instructionsFooter: "May the odds be ever in your favor! 🎉",
   },
   vi: {
     // Language Selection
@@ -27,11 +27,11 @@ export const translations = {
     welcomeCta: "Bắt Đầu Nào!",
 
     // Instructions Screen
-    instructionsTitle: "Game Mở Màn 🎉",
-    step1: "1️⃣ Bạn vừa nhận được 2 mảnh hình",
-    step2: "2️⃣ Tìm đúng bàn có mảnh ghép phù hợp và cùng đồng đội ghép hình hoàn chỉnh",
-    step3: "3️⃣ Ghép hình thật nhanh – ĐIỂM THƯỞNG đang chờ 🎉",
-    instructionsFooter: "Chúc may mắn & chúc các bạn có buổi tiệc vui vẻ! 🎉",
+    instructionsTitle: "Nhiệm Vụ: Tìm Đồng Đội 🔍",
+    step1: "1️⃣ Bạn vừa nhận được 2 mảnh ghép – giữ kỹ nhé, đừng để bay mất! 😅",
+    step2: "2️⃣ Đi săn đồng đội thôi! Tìm người có mảnh ghép khớp để hoàn thành bức hình (mỗi team 6-7 người)",
+    step3: "3️⃣ Dán kiệt tác của team lên bàn để chứng minh team đã form xong! Nhiệm vụ hoàn thành! ✨",
+    instructionsFooter: "Chúc các bạn may mắn và vui vẻ nha! 🎉",
   },
 } as const;
 
